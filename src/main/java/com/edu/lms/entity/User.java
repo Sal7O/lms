@@ -13,6 +13,7 @@ import java.util.Arrays;
 @Table(name="[user]")
 public class User {
 
+    // Attributes int user's table
     @Id
     @Column(name="id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
