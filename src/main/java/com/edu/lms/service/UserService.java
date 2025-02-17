@@ -11,14 +11,12 @@ import java.util.List;
 @Service
 public class UserService {
 
-
     private UserDAO userDAO;
 
     @Autowired
     public UserService(UserDAO userDAO) {
         this.userDAO = userDAO;
     }
-
 
     public List<User> get_all_users() {
         return userDAO.get_all_users();
